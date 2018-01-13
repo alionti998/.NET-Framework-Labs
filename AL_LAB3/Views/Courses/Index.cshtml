@@ -1,0 +1,52 @@
+﻿<html>
+@model IEnumerable<AL_LAB2Model.Course>
+
+@{
+    ViewBag.Title = "Index";
+}
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <h2>Index</h2>
+
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CourseCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CourseName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Number_of_Credits)
+            </th>
+            <th></th>
+        </tr>       
+
+    </table>
+    <input type="button" value="Get Courses" id="btn" />
+    <script>
+        $(document).ready(function () {
+            $("#btn").on("click", function () {
+                $.getJSON("../api/CoursesAPI", function (data) {
+                    $.each(data, function (k, v) {
+                        var r = $("<tr></tr>");
+
+                        $("<td></td>").append(v.CourseCode).appendTo(r);
+                        $("<td></td>").append(v.CourseName).appendTo(r);
+                        $("<td></td>").append(v.Number_of_Credits).appendTo(r);
+
+                        $(".table").append(r);
+
+                    });
+                });
+            });
+
+        });
+    </script>
+</body>
+</html>

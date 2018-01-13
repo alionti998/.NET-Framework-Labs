@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<OrderedTest name="orderedtest1" storage="c:\users\anthony lionti\documents\sheridan\prog35142 .net\solutions\lionti_991358460_adn_labs\al_lab5.test\controllers\orderedtest1.orderedtest" id="b1c891d9-4df5-4d4d-afc5-40b63e9d573f" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestLinks>
+    <TestLink id="502b4f7e-03a5-40e4-d509-eae6ff3e6508" name="Add_Test" storage="..\bin\debug\al_lab5.test.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="036836be-0bd5-fea7-72e5-94ff1ec8219f" name="Get_Test" storage="..\bin\debug\al_lab5.test.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="e67fc82f-8cd3-d701-2649-401888c6c77d" name="Delete_Test" storage="..\bin\debug\al_lab5.test.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+  </TestLinks>
+</OrderedTest>
